@@ -7,8 +7,7 @@ def download_attachment():
     apitoken = ''
     download_folder = input('Enter the folder to download the attachments to:\n')
     #Enter JIRA URL
-    server = 'https://rostermonster.atlassian.net/'
-    #issue_key = 'CO-4359'
+    server = ''
     issue_key = input('Enter the ticket number:\n')
 
     jira = JIRA(basic_auth=(username,apitoken),options={'server':server})
