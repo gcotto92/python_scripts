@@ -8,6 +8,7 @@ def download_attachment():
     download_folder = input('Enter the folder to download the attachments to:\n')
     #Enter JIRA URL
     server = ''
+    #issue_key = ''
     issue_key = input('Enter the ticket number:\n')
 
     jira = JIRA(basic_auth=(username,apitoken),options={'server':server})

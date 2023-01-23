@@ -4,7 +4,7 @@ from jira.resources import User
 process_function = True 
 
 def jira_function():
-    jiraOptions = {'server' : "/"}
+    jiraOptions = {'server' : ""}
 
     email_auth = input('Enter the email associated with the JIRA account:\n')
     api_token_auth = input('Enter the API token associated with the JIRA account:\n')
