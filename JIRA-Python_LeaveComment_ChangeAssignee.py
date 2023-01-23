@@ -4,7 +4,7 @@ from jira.resources import User
 process_function = True 
 
 def jira_function():
-    jiraOptions = {'server' : "https://rostermonster.atlassian.net/"}
+    jiraOptions = {'server' : "/"}
 
     email_auth = input('Enter the email associated with the JIRA account:\n')
     api_token_auth = input('Enter the API token associated with the JIRA account:\n')
@@ -22,13 +22,13 @@ def jira_function():
     #Change Assignee
     jira_connection = JIRA (
         basic_auth=(f'{email_auth}', f'{api_token_auth}'),
-        server='https://rostermonster.atlassian.net/'
+        server=''
     )
 
     issue = singleIssue
 
     params = {
-        "query": f"{assignee_input}@rostermonster.com",
+        "query": f"{assignee_input}",
         "includeActive": True,
         "includeInactive": False,
     }    
