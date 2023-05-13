@@ -8,7 +8,7 @@ bitbucket = Bitbucket(
 
 
 project = ""
-#all is the repo of /RAC/all
+#all is the repo of 
 repository = ""
 #name variable is for the name of the new branch to be created
 name = 'new_branch'
@@ -22,7 +22,7 @@ print(f'Created branch of {name} in {repository}')
 
 
 project2 = ""
-#repository2 is the repo of Ansible/rosterapps
+#repository2 
 repository2 = ""
 bitbucket.create_branch(project2, repository2, name, start_point, message)
 print(f'Created branch of {name} in {repository2}')
